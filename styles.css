@@ -1,0 +1,80 @@
+header {
+    background-color: #076502;
+    color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-family: "Limelight", sans-serif;
+
+    }
+    
+.ambiente-div-introducao {
+    background-color: #6a6045; /* bege claro */
+    color:#e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: -color 0.4s ease;
+}
+
+.conceito {
+    font-size: 19px;
+    font-family: "Oswald", sans-serif;
+}
+
+.introducao-titulo {
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-color: #f7f1e3;
+    color: #4e342e;
+    transition: all 0.4s ease;
+}
+
+/* Tema verde (ativado) */
+body.tema-verde {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+.tema-verde .ambiente-div-introducao {
+    background-color: #27482a; /* verde bem claro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6d4c41;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: background-color 0.4s;
+}
+
+body.tema-verde header {
+    background-color: #388e3c;
+}
+
+/* Botão flutuante com coração */
+.botao-tema {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+.botao-tema:hover {
+    transform: scale(1.2);
+}
